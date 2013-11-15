@@ -1,3 +1,4 @@
+/*MainActivity.java*/
 package com.example.androidtest;
 
 import android.os.Bundle;
