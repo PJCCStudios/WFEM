@@ -22,31 +22,39 @@
         android:id="@+id/txtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Output goes here" />
+        android:text="" />
         
                 <Button
         android:id="@+id/btnOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_alignParentTop="true"
         android:text="1" />
+=======
+        android:text="@+string/btn1Text" 
+        android:onClick="onClickButton1"/>
+>>>>>>> a2e644b58407396ee99d56d5ed47c3acde7ba220
  
                                 <Button
         android:id="@+id/btnTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_alignParentTop="true"
         android:onClick="button1"
         android:text="2" />
+=======
+        android:text="@+string/btn2Text"
+        android:onClick="onClickButton2" />
+>>>>>>> a2e644b58407396ee99d56d5ed47c3acde7ba220
                                 
                                                 <Button
         android:id="@+id/btnThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:text="3" />
+        android:text="@+string/btn3Text"
+        android:onClick="onClickButton3" />
     </LinearLayout>
 
 </RelativeLayout>
