@@ -11,5 +11,6 @@
     <string name="messageString1">Sephiroth killed Aeris.  Cloud kills Sephiroth.  Game Over.</string>
     <string name="messageString2">Boo!  Kyahahaha!  Gyahahaha!</string>
     <string name="messageString3">Ich. Ni. San. Smile.</string>
+    <string name="profile_adduser">Add New User</string>
     
 </resources>
