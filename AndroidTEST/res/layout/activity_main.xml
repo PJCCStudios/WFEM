@@ -30,7 +30,6 @@
         android:layout_height="wrap_content" 
         android:text="@+string/btn1Text" 
         android:onClick="onClickButton1" />
-
  
                                 <Button
         android:id="@+id/btnTwo"
@@ -47,4 +46,6 @@
         android:onClick="onClickButton3" />
     </LinearLayout>
 
+
+    
 </RelativeLayout>
