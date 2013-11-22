@@ -30,11 +30,16 @@
         android:layout_height="wrap_content"
 <<<<<<< HEAD
         android:layout_alignParentTop="true"
+<<<<<<< HEAD
         android:text="1" />
 =======
         android:text="@+string/btn1Text" 
         android:onClick="onClickButton1"/>
 >>>>>>> a2e644b58407396ee99d56d5ed47c3acde7ba220
+=======
+        android:text="1" 
+        android:onClick="button1"/>
+>>>>>>> parent of 5049788... test
  
                                 <Button
         android:id="@+id/btnTwo"
@@ -42,7 +47,6 @@
         android:layout_height="wrap_content"
 <<<<<<< HEAD
         android:layout_alignParentTop="true"
-        android:onClick="button1"
         android:text="2" />
 =======
         android:text="@+string/btn2Text"
@@ -57,4 +61,6 @@
         android:onClick="onClickButton3" />
     </LinearLayout>
 
+
+    
 </RelativeLayout>
