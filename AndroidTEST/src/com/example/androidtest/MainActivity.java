@@ -3,10 +3,12 @@ package com.example.androidtest;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
+//import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -31,14 +33,29 @@ public class MainActivity extends Activity {
         
     }
 
-    
-    public void button1(View view){
+    //set text label with string object value
+    public void onClickButton1(View view){
+    	String aString = (String) getString(R.string.messageString3);
     	TextView aTextView = (TextView) findViewById(R.id.txtView);
-    	String aString = (String) getString(R.string.btn1text);
     	aTextView.setText(aString);
     }
     
+    //open toast notification to display string value
+    public void onClickButton2(View view){
+    	String aString = (String) getString(R.string.messageString2);
+    	Toast aToast = Toast.makeText(getApplicationContext(), aString, Toast.LENGTH_SHORT);
+    	aToast.show();
+    }
 
-
-    
+    //close the application
+    public void onClickButton3(View view){
+    	//The right way to "close" an application
+    	//   http://stackoverflow.com/questions/3226495/android-exit-application-code
+    	//   http://stackoverflow.com/questions/2033914/quitting-an-application-is-that-frowned-upon/2034238#2034238
+    	//     In summary, never use exit() or finish()
+    	Intent anIntent = new Intent(Intent.ACTION_MAIN);
+    	anIntent.addCategory(Intent.CATEGORY_HOME);
+    	anIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    	startActivity(anIntent);
+    }
 }
