@@ -7,6 +7,7 @@
     <string name="btn1Text">1</string>
     <string name="btn2Text">2</string>
     <string name="btn3Text">3</string>
+    <string name="btn4Text">Switch View</string>
     
     <string name="messageString1">Sephiroth killed Aeris.  Cloud kills Sephiroth.  Game Over.</string>
     <string name="messageString2">Boo!  Kyahahaha!  Gyahahaha!</string>

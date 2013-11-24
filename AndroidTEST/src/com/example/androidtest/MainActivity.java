@@ -9,15 +9,19 @@ import android.view.View;
 //import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+//import android.widget.ViewFlipper;
 
 public class MainActivity extends Activity {
 
+	//private ViewFlipper aViewFlipper;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    
+        //aViewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper1);
+
     }
 
 
@@ -57,5 +61,11 @@ public class MainActivity extends Activity {
     	anIntent.addCategory(Intent.CATEGORY_HOME);
     	anIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     	startActivity(anIntent);
+    }
+    
+    public void onClickButton4(View view){
+    	//Layout aLayout = (Layout) findViewById(R.layout.profile_main)
+    	//aViewFlipper.setDisplayedChild( aViewFlipper.indexOfChild( findViewById(R.layout.profile_main) ) );
+    	setContentView(R.layout.profile_view);
     }
 }
