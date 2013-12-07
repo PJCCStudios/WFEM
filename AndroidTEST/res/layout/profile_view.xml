@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,15 +8,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
-    <ImageButton
-        android:id="@+id/iBtnNewProfile"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:contentDescription="@string/profile_adduser"
-        android:src="@android:drawable/ic_input_add" />
 
     <EditText
         android:id="@+id/edtTxtUserName"
@@ -29,5 +21,25 @@
 
         <requestFocus />
     </EditText>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3473515938685532/2453404004" >
+    </com.google.android.gms.ads.AdView>
+
+    <ImageButton
+        android:id="@+id/iBtnNewProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/profile_adduser"
+        android:src="@android:drawable/ic_input_add" />
 
 </RelativeLayout>
