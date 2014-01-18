@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 	// private ViewFlipper aViewFlipper;
-	private static final String TEST_DEVICE_ID = "B3EEABB8EE11C2BE770B684D95219ECB";
+	private static final String TEST_DEVICE_ID = "3599E000FF60738AE1C715EC024D70DD";
 
 	// private static final String AD_UNIT_ID =
 	// "ca-app-pub-3473515938685532/2453404004";
